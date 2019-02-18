@@ -4,7 +4,7 @@ def run_guessing_game
   loop do 
     target = gets.chomp
     guess =   target = rand(1...7)
-    if guess.to_i == target
+    if guess == target.to_i
       puts "/You guessed the correct number!/"
     elsif guess == 'exit'
       exit
