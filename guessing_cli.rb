@@ -1,9 +1,9 @@
 # Code your solution here!
 def run_guessing_game
   puts "Guess a number between 1 and 6."
-  target = rand(1...7)
   loop do 
-    guess = gets.chomp
+    target = gets.chomp
+    guess =   target = rand(1...7)
     if guess.to_i == target
       puts "/You guessed the correct number!/"
     elsif guess == 'exit'
