@@ -6,7 +6,7 @@ def run_guessing_game
     guess = rand(1...7)
     if guess == target.to_i
       puts "/You guessed the correct number!/"
-    elsif guess == 'exit'
+    elsif target == 'exit'
       exit
       break
     else
